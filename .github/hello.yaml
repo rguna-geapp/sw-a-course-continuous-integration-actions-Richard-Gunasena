@@ -4,16 +4,16 @@ on:
   push:
 
 jobs:
-  build:
+  build1:
     runs-on: ubnuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Compile & Run
+      - name: Compile&Run
         run: make hello && ./hello
 
-  build:
+  build2:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Compile & Run
+      - name: Compile&Run
         run: make hello && ./hello
