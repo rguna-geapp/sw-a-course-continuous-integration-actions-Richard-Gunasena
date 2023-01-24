@@ -11,7 +11,8 @@ jobs:
       - name: Compile & Run
         run: make hello && ./hello
 
-  runs-on: macos-latest
+  build:
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
       - name: Compile & Run
